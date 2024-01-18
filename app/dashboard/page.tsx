@@ -1,9 +1,17 @@
+'use client'
 import React from 'react'
-import { Button } from '@radix-ui/themes'
+import { Button, TextField } from '@radix-ui/themes'
 
 const Dashboard = () => {
   return (
-    <div className='flex mx-5'><Button>Hello</Button></div>
+   <div className='max-w-xl space-y-3'>
+    <TextField.Root>
+    <TextField.Input placeholder="Enter a youtube video URL" /> 
+    </TextField.Root>
+    <Button>Generate Time Stamps</Button>
+       
+   </div> 
+   
   )
 }
 
